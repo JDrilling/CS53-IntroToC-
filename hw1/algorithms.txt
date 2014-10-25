@@ -1,0 +1,30 @@
+Name: Jacob Drilling
+Section: B
+
+1. Compare the first letter of each word.
+     If they are the same letter, compare the next letter.
+     Repeat until the letters are not the same, or you reach the end of the
+     word.
+   Then, look up the value of each letter.
+     If you reached the end of the word, then assign a value of 0 to that
+     letter. 
+   Subtract the value of the second letter from the first letter.
+
+2. Enter 1 step into the maze.
+   Turn left.
+     If there is not a wall, take a step.
+     If there is a wall, turn left 3 times to face forward again.
+        If there is still a wall, turn left twice.
+        If there is no wall, take a step.
+   Repeat.
+
+3. Every student grabs 1 ID.
+     All students with the correct ID, leave.
+   Have the students create 1 long line of people.
+   The first student in line should should go down the line talking to each
+   person.
+     If he encounters the owner of the ID that he is holding, they switch.
+     When he talks to a person with his ID, they switch.
+     Then, all people with correct ID's leave.
+   Repeat, until all people have left.
+     

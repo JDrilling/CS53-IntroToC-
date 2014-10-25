@@ -1,0 +1,46 @@
+//Jacob Drilling
+//main.cpp
+//creates a house, a cleaner, and a family member.;
+
+#include<iostream>
+#include "house.h"
+#include "cleaner.h"
+#include "family_member.h"
+#include "trash.h"
+#include "vacuum.h"
+#include "function.h"
+
+using namespace std;
+
+const unsigned short HOUSE_SIZE = 25;
+const unsigned short NUM_TRASH = 42;
+const unsigned short NUM_FAM = 4;
+
+int main()
+{
+  srand(time(NULL));
+
+  //Objects.
+  cleaner mycleaner("Marge");
+  family_member family[NUM_FAM];
+  house myhouse(HOUSE_SIZE, NUM_TRASH, mycleaner, family, NUM_FAM);
+
+
+  cout << myhouse << endl;
+  
+  for (int i = 0; i < 10; i ++)
+  {
+    mycleaner.step(myhouse);
+    cout << myhouse << endl;
+    cout << mycleaner << endl;
+  }
+
+  for (int i = 0; i < NUM_FAM; i++)
+    cout << family[i] << endl;
+
+  mycleaner.calc_stress(myhouse);
+
+  cout << mycleaner << endl;
+  
+  return 0;
+}
